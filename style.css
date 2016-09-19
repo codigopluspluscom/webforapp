@@ -1,7 +1,7 @@
 /* The picture has a fixed height*/
 .jumbotron{
-    background: url("http://66.media.tumblr.com/5f78b6e0617f4bda021ff247f6ca70d9/tumblr_od7a135S6m1u7ns0go1_1280.jpg") center center;
-    background-size:cover;
+    background: url("http://66.media.tumblr.com/5f78b6e0617f4bda021ff247f6ca70d9/tumblr_od7a135S6m1u7ns0go1_1280.jpg");
+    background-size:100% 100%;
     height: 600px;
 }
 /*setting the logo' size */
@@ -17,6 +17,8 @@
 /*space between H1 and Logo*/
 .feat h1{
     padding-top: 60px;
+    display: none;
+    
 }
 /*lets style the two buttons*/
 .feat .btn-default{
@@ -29,6 +31,70 @@
     width: 158px;
     background-color: rgba(0,58,158, 0.55);
     
+}
+.tryit{
+    text-align: center;
+    padding: 19px 0 39px 0;
+    color: rgb(1,8,62);
+}
+.tryit img{
+    height: 59px;
+    width: 199px;
+    margin-right: 20px;
+}
+/*styling the footah!!*/
+.footer{
+    background-color: #eee;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/*adding style for under devices*/
+@media(max-width:480px){
+    .jumbotron{
+        height: 570px;
+        margin:0;
+    }
+    .ellogo{
+        width: 39px;
+        height: 39px;
+    }
+    .feat h1{
+        padding-top: 2px;
+    }
+    .feat p, .feat a{
+        font-size: 11px;
+        
+    }
+    .feat{
+        text-align: center;
+    }
+    .tryit img{
+    height: 24px;
+    width: 99px;
+    margin-right: 10px;
+}
+}
+/*adding style for devices 480px and 769px*/
+@media(min-width:480px) and (max-width:768px){
+    .jumbotron{
+        height: 409px;
+        margin:0;
+    }
+    .ellogo{
+        width: 49px;
+        height: 49px;
+    }
+    .feat h1{
+        padding-top: 29px;
+    }
+    .feat p{
+        font-size: 16px;
+        
+    }
+    .feat{
+        text-align: center;
+    }
 }
 .feat .btn-default:hover{
     background-color: rgb(0,58,158);
