@@ -1,0 +1,35 @@
+/* The picture has a fixed height*/
+.jumbotron{
+    background: url("http://66.media.tumblr.com/5f78b6e0617f4bda021ff247f6ca70d9/tumblr_od7a135S6m1u7ns0go1_1280.jpg") center center;
+    background-size:cover;
+    height: 600px;
+}
+/*setting the logo' size */
+.ellogo{
+    width: 70px;
+    height 70px;
+    }
+/* Setting the colors*/
+.feat{
+    color: white;
+    
+}
+/*space between H1 and Logo*/
+.feat h1{
+    padding-top: 60px;
+}
+/*lets style the two buttons*/
+.feat .btn-default{
+    color: white;
+    border-radius: 11px;
+    margin-top: 19px;
+    margin-right: 14px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 158px;
+    background-color: rgba(0,58,158, 0.55);
+    
+}
+.feat .btn-default:hover{
+    background-color: rgb(0,58,158);
+}
